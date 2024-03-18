@@ -30,7 +30,10 @@
 			article:last-child {
 				padding: 0px 30px;
 			}
-
+			article:only-of-type {
+				min-height: 54px;
+			}
+			
 			article.important {
 				color: white;
 			}
@@ -55,7 +58,7 @@
 			}
 			
 			p {
-				font-size: 24px;
+				font-size: 36px;
 				font-family: "Cascadia Mono Light";
 			}
 
@@ -66,6 +69,12 @@
 			@media (height > 1080px) {
 				html {
 					zoom: 150%;
+				}
+			}
+			
+			@media (height < 1080px) {
+				html {
+					zoom: 60%;
 				}
 			}
 		</style>

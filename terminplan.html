@@ -21,11 +21,24 @@
 				background-image: linear-gradient(rgb(157 208 208), rgb(157 108 208));
 			}
 			
-			article {
-				border-left: black 6px solid;
-				padding: 30px 30px 0px 30px;
+			main {
+				display: grid;
+				height: 869px;
+				align-content: space-around;
 			}
 			
+			article {
+				border-left: white 6px solid;
+				padding: 0px 30px 12px;
+			}
+			
+			article:last-child {
+				padding: 0px 30px;
+			}
+
+			article.important {
+				color: white;
+			}
 			h1 {
 				font-size: 30px;
 			}
@@ -36,9 +49,9 @@
 			
 			h3 {
 				font-size: 36px;
-				border-bottom: solid black 6px;
+				border-left: solid black 6px;
 				margin-top: 30px;
-				padding: 0px 0px 3px 36px;
+				padding: 0px 0px 12px 30px;
 			}
 			
 			h4 {
@@ -50,8 +63,7 @@
 				font-size: 24px;
 			}
 
-			.important {
-				font-family: "Cascadia Mono";
+			p.important {
 				color: white;
 			}
 		</style>
@@ -59,20 +71,33 @@
 	<body>
 		<h1>Terminplan</h1>
 		<h2>Kalenderwoche 12</h2>
-		<section>
-			<h3>Mo 18.03.2024</h3>
-			<article>
-				<h4>12:45 bis 13:30 - Kulturstunde Brainfood</h4>
-				<p>Entwicklungsingenieurin Seraina Saurnmann (ETH) wird einen Vortrag über den Maschinenbau bei Sensirion halten.</p>
-				<p class="important">Obligatorisch für Schüler der 5. Klasse</p>
-			</article>
-		</section>
-		<section>
-			<h3>Di 19.03.2024</h3>
-			<article>
-				<h4>09:45 bis 10:05 - Kuchenverkauf 6d</h4>
-				<p>Die Klasse 6d wird vor dem Klassentrakt verschiedene Kuchen verkaufen.</p>
-			</article>
-		</section>
+		<main>
+			<section>
+				<h3>Mo 18.03.2024</h3>
+				<article>
+					<h4>12:45 bis 13:30 - Kulturstunde Brainfood</h4>
+					<p>Entwicklungsingenieurin Seraina Saurnmann (ETH) wird einen Vortrag über den Maschinenbau bei Sensirion halten.</p>
+					<p class="important">Obligatorisch für Schüler der 5. Klasse</p>
+				</article>
+			</section>
+			<section>
+				<h3>Di 19.03.2024</h3>
+				<article>
+					<h4>09:45 bis 10:05 - Kuchenverkauf 6d</h4>
+					<p>Die Klasse 6d wird vor dem Klassentrakt verschiedene Kuchen verkaufen.</p>
+				</article>
+				<article class="important">
+					<h4>Mediothek Geschlossen</h4>
+					<p>Die Mediothek wird den ganzen Tag nicht offen haben.</p>
+				</article>
+			</section>
+			<section>
+				<h3>Mi 20.03.2024</h3>
+				<article>
+					<h4>17:00 bis 19:00 - Apero für Samo</h4>
+					<p>Apero in der Semihalle für alle eingeladenen Samohelfer und Samohelferinnen.</p>
+				</article>
+			</section>
+		</main>
 	</body>
 </html>
